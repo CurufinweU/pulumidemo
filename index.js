@@ -11,5 +11,5 @@ endpoint.static("/", "www");
 endpoint.get("/source", (req, res) => res.json({name: "other AWS"}));
 endpoint.get("/source2", (req, res) => res.json({name2: "other AWS2"}));
 
-// Export the public URL for the HTTP service
+// Export the public URL for the HTTP service some change
 exports.url = endpoint.publish().url;
